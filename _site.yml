@@ -1,0 +1,13 @@
+name: "Shopify Technical Challenge Submission link"
+output_dir: "docs"
+navbar:
+  title: "Shopify Technical Challenge Submission link"
+  left:
+  - text: "Home"
+   href: index.html
+  - text: ""
+   href: Shopify-Technical-Challenge-Submission.html
+output:
+  html_document:
+ theme: cosmo
+
