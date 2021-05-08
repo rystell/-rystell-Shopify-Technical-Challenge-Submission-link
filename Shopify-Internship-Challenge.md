@@ -16,7 +16,7 @@ ggplot(aes(order_amount))+geom_histogram()
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](Shopify-Internship-Challenge_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![image-20210508180840999](C:\Users\Ryan Elliott\AppData\Roaming\Typora\typora-user-images\image-20210508180840999.png)
 
 Another factor that could be influencing the high average value is the
 distribution of sales at shops. If there is one shop that sells a lot of
@@ -31,7 +31,7 @@ d%>%
 ggplot(aes(shop_id))+geom_histogram(binwidth = 1)
 ```
 
-![](Shopify-Internship-Challenge_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![image-20210508180854115](C:\Users\Ryan Elliott\AppData\Roaming\Typora\typora-user-images\image-20210508180854115.png)
 
 Part (b) If the task is to evaluate the AOV of sales from the past 30
 days we will have weight the amount of each order by the total number of
@@ -54,7 +54,7 @@ ggplot(aes(order_amount))+geom_histogram()
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](Shopify-Internship-Challenge_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![image-20210508180912679](C:\Users\Ryan Elliott\AppData\Roaming\Typora\typora-user-images\image-20210508180912679.png)
 
 Part (c) The AOV of the unprocessed data is $3145 which is well beyond
 99% of the order amount of each record. I will therefore omit all data
@@ -87,7 +87,7 @@ Internship Challenge Question 2
 SELECT COUNT(OrderID) as Shipments FROM Orders where ShipperID = 1;
 ```
 
-1.  The last name of the employee with the most orders is Peacock.
+2.  The last name of the employee with the most orders is Peacock.
 
 ``` sql
 select count(Employees.LastName),Employees.LastName from Orders 
@@ -97,7 +97,7 @@ group by LastName
 order by count(LastName) DESC;
 ```
 
-1.  The product most ordered from Germany was Gorgonzola Telino.
+3.  The product most ordered from Germany was Gorgonzola Telino.
 
 ``` sql
 select Count(Products.ProductID), Products.ProductName
