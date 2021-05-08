@@ -3,8 +3,8 @@ title: "Shopify Technical Challenge Submission (link)"
 author: "Ryan Elliott"
 date: "06/05/2021"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
