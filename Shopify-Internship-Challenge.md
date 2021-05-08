@@ -16,7 +16,7 @@ ggplot(aes(order_amount))+geom_histogram()
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![image-20210508180840999](C:\Users\Ryan Elliott\AppData\Roaming\Typora\typora-user-images\image-20210508180840999.png)
+ ![hist1](C:\Users\Ryan Elliott\Documents\GitHub\Shopify-Technical-Challenge-Submission-link-\Shopify-Technical-Challenge-Submission-link\hist1.png)
 
 Another factor that could be influencing the high average value is the
 distribution of sales at shops. If there is one shop that sells a lot of
@@ -31,7 +31,7 @@ d%>%
 ggplot(aes(shop_id))+geom_histogram(binwidth = 1)
 ```
 
-![image-20210508180854115](C:\Users\Ryan Elliott\AppData\Roaming\Typora\typora-user-images\image-20210508180854115.png)
+![hist2](C:\Users\Ryan Elliott\Documents\GitHub\Shopify-Technical-Challenge-Submission-link-\Shopify-Technical-Challenge-Submission-link\hist2.png)
 
 Part (b) If the task is to evaluate the AOV of sales from the past 30
 days we will have weight the amount of each order by the total number of
@@ -54,7 +54,7 @@ ggplot(aes(order_amount))+geom_histogram()
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![image-20210508180912679](C:\Users\Ryan Elliott\AppData\Roaming\Typora\typora-user-images\image-20210508180912679.png)
+![hist3](C:\Users\Ryan Elliott\Documents\GitHub\Shopify-Technical-Challenge-Submission-link-\Shopify-Technical-Challenge-Submission-link\hist3.png)
 
 Part (c) The AOV of the unprocessed data is $3145 which is well beyond
 99% of the order amount of each record. I will therefore omit all data
