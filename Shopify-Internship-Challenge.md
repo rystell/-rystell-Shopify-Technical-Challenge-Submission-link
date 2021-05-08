@@ -87,7 +87,7 @@ Internship Challenge Question 2
 SELECT COUNT(OrderID) as Shipments FROM Orders where ShipperID = 1;
 ```
 
-1.  The last name of the employee with the most orders is Peacock.
+2.  The last name of the employee with the most orders is Peacock.
 
 ``` sql
 select count(Employees.LastName),Employees.LastName from Orders 
@@ -97,7 +97,7 @@ group by LastName
 order by count(LastName) DESC;
 ```
 
-1.  The product most ordered from Germany was Gorgonzola Telino.
+3.  The product most ordered from Germany was Gorgonzola Telino.
 
 ``` sql
 select Count(Products.ProductID), Products.ProductName
